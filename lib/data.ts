@@ -15,8 +15,7 @@ export const candidate = {
   house: "Edo State House of Assembly",
   tagline: "Let's Do More - 2027",
 
-  // Replace with actual photo path in /public folder e.g. "/ojie-photo.jpg"
-  // Leave as "" to show initials avatar instead
+  
   photo: "/images/ojie-photo1.png",
 
   // WhatsApp campaign number — replace with real number (include country code, no +)
