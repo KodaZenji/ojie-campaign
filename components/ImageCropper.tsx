@@ -219,7 +219,7 @@ export default function ImageCropper({ image, onCropComplete, onCancel }: ImageC
                     </div>
 
                     <p className="text-xs text-gray-500 text-center pt-2">
-                        💡 Tip: You can also use mouse wheel to zoom in/out
+                        💡 Tip: You can also use mouse wheel to zoom in/out if you're on pc 
                     </p>
                 </div>
             </div>
