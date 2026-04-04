@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    color: #0d1a0d;
+  }
+}
+
+@layer components {
+  /* Reusable section padding */
+  .section-pad {
+    @apply px-5 py-12 md:px-10 md:py-16;
+  }
+
+  /* Section eyebrow label */
+  .eyebrow {
+    @apply text-xs font-semibold tracking-[0.2em] uppercase text-green-light mb-1;
+  }
+
+  /* Section headline */
+  .section-title {
+    @apply font-oswald text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-2;
+  }
+
+  /* Green rule under section title */
+  .green-rule {
+    @apply w-10 h-1 bg-green-main mb-7 rounded;
+  }
+
+  /* Gold-bordered button */
+  .btn-gold {
+    @apply inline-block bg-gold font-oswald font-bold text-gold-dark tracking-wide
+           px-6 py-3 rounded text-base transition-all hover:brightness-110 active:scale-95;
+  }
+
+  /* WhatsApp green button */
+  .btn-wa {
+    @apply inline-flex items-center gap-2 bg-wa font-oswald font-bold text-white
+           tracking-wide px-6 py-3 rounded text-base transition-all
+           hover:brightness-110 active:scale-95;
+  }
+}
