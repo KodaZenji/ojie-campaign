@@ -11,6 +11,7 @@ interface Achievement {
   body: string;
   reaction: string;
   image_url: string | null;
+  reaction_count: number;
 }
 
 export default function AchievementGrid() {
@@ -37,6 +38,28 @@ export default function AchievementGrid() {
 
     fetchAchievements();
   }, []);
+
+  async function handleReact(id: string) {
+    // Optimistically update UI
+    setAchievements((prev) =>
+      prev.map((a) =>
+        a.id === id ? { ...a, reaction_count: (a.reaction_count || 0) + 1 } : a
+      )
+    );
+
+    // Persist to Supabase using an RPC increment to avoid race conditions
+    const { error } = await supabase.rpc("increment_reaction", { achievement_id: id });
+
+    if (error) {
+      console.error("Failed to save reaction:", error);
+      // Roll back optimistic update on failure
+      setAchievements((prev) =>
+        prev.map((a) =>
+          a.id === id ? { ...a, reaction_count: (a.reaction_count || 1) - 1 } : a
+        )
+      );
+    }
+  }
 
   if (loading) {
     return (
@@ -65,12 +88,15 @@ export default function AchievementGrid() {
             {achievements.map((a) => (
               <AchievementCard
                 key={a.id}
+                id={a.id}
                 date={a.date}
                 location={a.location}
                 headline={a.headline}
                 body={a.body}
                 reaction={a.reaction}
+                reactionCount={a.reaction_count || 0}
                 image={a.image_url || undefined}
+                onReact={handleReact}
               />
             ))}
           </div>
