@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { supabase } from "@/lib/supabase";
 import { Plus, Edit, Trash2, Eye, EyeOff, Upload, X, Crop } from "lucide-react";
 import ImageCropper from "@/components/ImageCropper";
@@ -33,6 +33,7 @@ export default function AdminAchievementsPage() {
     const [previewUrl, setPreviewUrl] = useState<string>("");
     const [showCropper, setShowCropper] = useState(false);
     const [cropImageUrl, setCropImageUrl] = useState<string>("");
+    const formRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         checkAuth();
@@ -196,6 +197,9 @@ export default function AdminAchievementsPage() {
         setPreviewUrl(achievement.image_url || "");
         setSelectedFile(null);
         setShowForm(true);
+        setTimeout(() => {
+            formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 50);
     }
 
     function handleFileSelect(file: File) {
@@ -266,7 +270,7 @@ export default function AdminAchievementsPage() {
 
             {/* Form */}
             {showForm && (
-                <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
+                <div ref={formRef} className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
                     <h4 className="font-oswald font-bold text-xl mb-4">
                         {editingId ? "Edit Achievement" : "Create New Achievement"}
                     </h4>
