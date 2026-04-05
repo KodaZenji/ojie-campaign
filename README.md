@@ -3,7 +3,7 @@
 APC re-election campaign website for Hon. Eugene Ojie Inegbeboh,
 Igueben Constituency, Edo State House of Assembly.
 
-Built by Eromosele Benjamin Michael (KodaZenji) · NICTM Uromi · 2026
+Built by KodaZenji 2026
 Voluntarily, with gratitude.
 
 ---
