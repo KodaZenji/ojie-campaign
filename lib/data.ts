@@ -264,5 +264,5 @@ export const seo = {
   title: "Hon. Eugene Ojie Inegbeboh — Igueben First, Always | APC",
   description:
     "Official re-election campaign website for Hon. Eugene Ojie Inegbeboh, APC member representing Igueben Constituency in the Edo State House of Assembly.",
-  ogImage: "/og-image.jpg",  // Place a 1200x630 image in /public
+  ogImage: "/images/Quoteblock2_image(1).jpg",  
 };
