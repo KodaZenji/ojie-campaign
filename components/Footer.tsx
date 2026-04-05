@@ -5,7 +5,7 @@ import WhatsAppIcon from "./icons/WhatsAppIcon";
 export default function Footer() {
   const waShareUrl = `https://wa.me/?text=${encodeURIComponent(
     `Hon. Ojie Inegbeboh. Let's Do More - 2027 ${
-      typeof window !== "undefined" ? window.location.href : "https://ojieigueben.vercel.app"
+      typeof window !== "undefined" ? window.location.href : "https://ojie-campaign.vercel.app/"
     }`
   )}`;
 
