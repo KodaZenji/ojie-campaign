@@ -5,24 +5,26 @@ import { candidate } from "@/lib/data";
 import { ThumbsUp } from "lucide-react";
 
 interface AchievementCardProps {
-  date: string; location: string; headline: string;
-  body: string; reaction: string; image?: string;
+  id: string;
+  date: string;
+  location: string;
+  headline: string;
+  body: string;
+  reaction: string;
+  reactionCount: number;
+  image?: string;
+  onReact: (id: string) => void;
 }
 
 export default function AchievementCard({
-  date, location, headline, body, reaction, image,
+  id, date, location, headline, body, reaction, reactionCount, image, onReact,
 }: AchievementCardProps) {
   const [liked, setLiked] = useState(false);
-  const [count, setCount] = useState(0);
 
   function handleLike() {
-    if (liked) {
-      setLiked(false);
-      setCount((c) => c - 1);
-    } else {
-      setLiked(true);
-      setCount((c) => c + 1);
-    }
+    if (liked) return; // prevent un-liking — count only goes up (persisted)
+    setLiked(true);
+    onReact(id);
   }
 
   return (
@@ -63,17 +65,18 @@ export default function AchievementCard({
         {/* Like button */}
         <button
           onClick={handleLike}
+          disabled={liked}
           className={`flex items-center gap-1.5 text-xs font-semibold transition-colors
-            ${liked ? "text-green-main" : "text-gray-400 hover:text-green-main"}`}
+            ${liked ? "text-green-main cursor-default" : "text-gray-400 hover:text-green-main"}`}
         >
           <ThumbsUp
             size={14}
             className={`transition-transform ${liked ? "scale-125 fill-green-main" : ""}`}
           />
           <span>{reaction}</span>
-          {count > 0 && (
+          {reactionCount > 0 && (
             <span className="bg-green-pale text-green-main text-[10px] font-bold px-1.5 py-0.5 rounded-full">
-              {count}
+              {reactionCount}
             </span>
           )}
         </button>
