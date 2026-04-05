@@ -27,7 +27,6 @@ export default function Footer() {
       </a>
 
       <p className="text-[11px] text-green-light tracking-wide mb-1">{footer.line1}</p>
-      <p className="text-[11px] text-green-light tracking-wide mb-1">{footer.line2}</p>
       <p className="text-[10px] text-green-light opacity-60 mt-3">{footer.line3}</p>
 
     </footer>
