@@ -179,40 +179,43 @@ export const agenda = {
   headline: "What He Is Going to Do Next — For Igueben",
   items: [
     {
-      icon: "GraduationCap",
+      icon:  "GraduationCap",
       title: "College of Education",
-      body: "Advocate for expanded funding, new programme accreditation and full recognition of COE Igueben as the main campus of Edo State College of Education.",
+      body:  "Advocate for expanded funding, new programme accreditation and full recognition of COE Igueben as the main campus of Edo State College of Education.",
+      image: "/images/jamb-reg.jpg",
     },
     {
-      icon: "Hammer",
+      icon:  "Hammer",
       title: "Roads and Infrastructure",
-      body: "Push for motorable roads linking Igueben communities to Ubiaja and Benin City, and internal LGA roads that connect the ten wards.",
+      body:  "Push for motorable roads linking Igueben communities to Ubiaja and Benin City, and internal LGA roads that connect the ten wards.",
+      image: "",
     },
     {
-      icon: "ShieldCheck",
+      icon:  "ShieldCheck",
       title: "Security",
-      body: "Work with the state government to establish a visible security presence along the rural routes and forest paths where kidnappings have occurred.",
+      body:  "Work with the state government to establish a visible security presence along the rural routes and forest paths where kidnappings have occurred.",
+      image: "",
     },
     {
-      icon: "BriefcaseBusiness",
+      icon:  "BriefcaseBusiness",
       title: "Youth Employment",
-      body: "Support skills and STEM training through the COE's vocational programmes to create real jobs for young Igueben people.",
+      body:  "Support skills and STEM training through the COE's vocational programmes to create real jobs for young Igueben people.",
+      image: "",
     },
     {
-      icon: "HeartPulse",
+      icon:  "HeartPulse",
       title: "Water and Healthcare",
-      body: "Ensure all ten wards have access to clean water and functional primary healthcare centres through the state assembly budget process.",
+      body:  "Ensure all ten wards have access to clean water and functional primary healthcare centres through the state assembly budget process.",
+      image: "",
     },
     {
-      icon: "Zap",
+      icon:  "Zap",
       title: "Electricity",
-      body: "Drive electricity improvements for Igueben town and surrounding communities through direct advocacy with the state government.",
+      body:  "Drive electricity improvements for Igueben town and surrounding communities through direct advocacy with the state government.",
+      image: "",
     },
   ],
-
-
 };
-
 // ── QUOTE BLOCK 2 ───────────────────────────────────────────────────────────────
 export const quote2 = {
   text:
