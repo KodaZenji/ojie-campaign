@@ -182,7 +182,7 @@ export const agenda = {
       icon:  "GraduationCap",
       title: "College of Education",
       body:  "Advocate for expanded funding, new programme accreditation and full recognition of COE Igueben as the main campus of Edo State College of Education.",
-      image: "/images/jamb-reg.jpg",
+      image: "/images/jamb_reg.jpg",
     },
     {
       icon:  "Hammer",
