@@ -7,6 +7,7 @@ import {
   BriefcaseBusiness,
   HeartPulse,
   Zap,
+  LucideProps,
 } from "lucide-react";
 
 const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
