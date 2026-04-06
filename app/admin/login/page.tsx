@@ -102,7 +102,7 @@ export default function AdminLoginPage() {
 
                 {/* Footer */}
                 <p className="text-center text-green-muted text-xs mt-6">
-                    Secured by Supabase Authentication • let's Do More - 2027
+                    Secured Authentication • let's Do More - 2027
                 </p>
             </div>
         </div>
