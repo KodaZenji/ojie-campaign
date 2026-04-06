@@ -10,7 +10,7 @@ import {
   LucideProps,
 } from "lucide-react";
 
-const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+const iconMap: Record<string, React.ComponentType<LucideProps>> = {
   GraduationCap,
   Hammer,
   ShieldCheck,
