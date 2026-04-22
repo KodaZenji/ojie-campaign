@@ -30,22 +30,25 @@ export default function AchievementCard({
   return (
     <article className="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow">
 
-      {/* Card header */}
-      <div className="flex items-center gap-3 px-4 py-3 border-b border-gray-100">
-        <div className="w-10 h-10 rounded-full overflow-hidden shrink-0">
-  <Image
-    src={candidate.photo}
-    alt={candidate.shortName}
-    width={40}
-    height={40}
-    className="object-cover w-full h-full"
-  />
+{/* Card header */}
+<div className="flex items-center gap-3 px-4 py-3 border-b border-gray-100">
+  <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 bg-green-main">
+    <img
+      src={candidate.photo}
+      alt={candidate.shortName}
+      width={40}
+      height={40}
+      className="object-cover w-full h-full rounded-full"
+      onError={(e) => {
+        e.currentTarget.style.display = "none";
+      }}
+    />
+  </div>
+  <div>
+    <p className="font-semibold text-sm text-gray-900">{candidate.shortName}</p>
+    <p className="text-xs text-gray-500">{date}</p>
+  </div>
 </div>
-        <div>
-          <p className="font-semibold text-sm text-gray-900">{candidate.shortName}</p>
-          <p className="text-xs text-gray-500">{date}</p>
-        </div>
-      </div>
 
       {/* Image or placeholder */}
       <div className="relative w-full h-64 bg-green-pale flex flex-col items-center justify-center gap-2 border-b border-gray-100 py-4">
