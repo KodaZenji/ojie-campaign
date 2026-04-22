@@ -205,7 +205,7 @@ export const agenda = {
     {
       icon:  "HeartPulse",
       title: "Water and Healthcare",
-      body:  "Ensure all ten wards have access to clean water and functional primary healthcare centres through the state assembly budget process.",
+      body:  "Ensure all ten wards have access to clean water and equiped primary healthcare centres through the state assembly budget process.",
       image: "/images/Water.jpg",
     },
     {
