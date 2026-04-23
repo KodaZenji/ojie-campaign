@@ -19,7 +19,7 @@ export const candidate = {
   photo: "/images/ojie-photo1.png",
 
   // WhatsApp campaign number — replace with real number (include country code, no +)
-  whatsappNumber: "2347037115189",
+  whatsappNumber: "2347064581391",
   whatsappMessage: "Hello, I want to support Hon. Ojie Inegbeboh's re-election campaign.",
 };
 
@@ -135,7 +135,7 @@ export const achievements = [
     location: "Minority Whip Nomination · National Coverage",
     headline: "Even His Colleagues Knew He Was the Right Person",
     body:
-      "He was Nominated as Minority Whip of the Edo State House of Assembly — a recognition that triggered a chamber-wide debate and national media coverage on the same day. Blueprint, Daily Trust, Tribune, Punch and Voice of Nigeria. Five major outlets. One day. One Igueben lawmaker.",
+      "He was Nominated as Minority Whip of the Edo State House of Assembly. A recognition that triggered a chamber-wide debate and national media coverage on the same day. Blueprint, Daily Trust, Tribune, Punch and Voice of Nigeria. Five major outlets. One day. One Igueben lawmaker.",
     reaction: "Real Leadership",
     image: "",
   },
@@ -168,7 +168,7 @@ export const apcSection = {
   points: [
     "APC controls 20 of 24 seats in the Edo Assembly. That is where the power to help Igueben lives.",
     "Being in a 4-seat minority means watching others decide what your community gets. He chose a better position for you.",
-    "APC Chairman Tenebe on Quote: \"A proven leader — same standing as every member of this party.\"",
+    "APC Chairman Tenebe on Quote: \"A proven leader, the same standing as every member of this party.\"",
     "With a seat at the majority table, Igueben speaks from strength going into the next term.",
   ],
 };
@@ -176,7 +176,7 @@ export const apcSection = {
 // ── SECOND TERM AGENDA ────────────────────────────────────────────────────────
 export const agenda = {
   eyebrow: "Second Term Priorities",
-  headline: "What He Is Going to Do Next — For Igueben",
+  headline: "What He Is Going to Do Next, For Igueben",
   items: [
     {
       icon:  "GraduationCap",
