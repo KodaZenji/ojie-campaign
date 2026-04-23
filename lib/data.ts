@@ -164,7 +164,7 @@ export const apcSection = {
   badge: "APC · MAJORITY",
   headline: "Why He Joined the Winning Team — For Igueben",
   intro:
-    "Joining APC was not about abandoning anyone. It was about putting Igueben exactly where it belongs — at the table where Edo State's development decisions are made.",
+    "Joining APC was not about abandoning anyone. It was about putting Igueben exactly where it belongs, at the table where Edo State's development decisions are made.",
   points: [
     "APC controls 20 of 24 seats in the Edo Assembly. That is where the power to help Igueben lives.",
     "Being in a 4-seat minority means watching others decide what your community gets. He chose a better position for you.",
