@@ -230,7 +230,7 @@ export const press = [
   { name: "Daily Post", topic: "Monarch story · Feb 2025", url: "https://dailypost.ng/2025/02/10/edo-dont-claim-glory-for-our-monarchs-release-we-paid-ransom-lawmaker-inegbeboh-to-police-essc/" },
   { name: "Tribune Online", topic: "Minority Whip · May 2025", url: "https://tribuneonlineng.com/uproar-as-edo-assembly-appoints-eugene-inegbeboh-as-minority-whip/amp/" },
   { name: "Blueprint", topic: "APC Move · July 2025", url: "https://blueprint.ng/again-pdp-legislators-join-apc-in-edo/" },
-  { name: "Vanguard Nigeria", topic: "Assembly coverage", url: "www.vanguardngr.com/2025/05/edo-assembly-appoints-minority-whip-amid-uproar/amp/" },
+  { name: "Vanguard Nigeria", topic: "Assembly coverage", url: "https://vanguardngr.com/2025/05/edo-assembly-appoints-minority-whip-amid-uproar/amp/" },
 ];
 
 
