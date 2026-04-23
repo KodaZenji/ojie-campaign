@@ -32,17 +32,19 @@ export default function AchievementCard({
 
 {/* Card header */}
 <div className="flex items-center gap-3 px-4 py-3 border-b border-gray-100">
-  <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 bg-green-main">
-    <img
-      src={candidate.photo}
-      alt={candidate.shortName}
-      width={40}
-      height={40}
-      className="object-cover w-full h-full rounded-full"
-      onError={(e) => {
-        e.currentTarget.style.display = "none";
-      }}
-    />
+  <div className="p-[2px] rounded-full bg-gradient-to-tr from-green-main via-emerald-400 to-green-300">
+    <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 bg-green-main p-[2px] bg-white">
+      <img
+        src={candidate.photo}
+        alt={candidate.shortName}
+        width={40}
+        height={40}
+        className="object-cover w-full h-full rounded-full"
+        onError={(e) => {
+          e.currentTarget.style.display = "none";
+        }}
+      />
+    </div>
   </div>
   <div>
     <p className="font-semibold text-sm text-gray-900">{candidate.shortName}</p>
