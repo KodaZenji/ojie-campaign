@@ -206,7 +206,7 @@ export const agenda = {
       icon:  "HeartPulse",
       title: "Water and Healthcare",
       body:  "Ensure all ten wards have access to clean water and equiped primary healthcare centres through the state assembly budget process.",
-      image: "/images/Water.jpg",
+      image: "/images/water2.jpg",
     },
     {
       icon:  "Zap",
@@ -226,12 +226,11 @@ export const quote2 = {
 
 // ── PRESS COVERAGE ────────────────────────────────────────────────────────────
 export const press = [
-  { name: "The Punch", topic: "Monarch ransom · Feb 2025", url: "https://punchng.com" },
-  { name: "Daily Trust", topic: "Security advocacy · Feb 2025", url: "https://dailytrust.com" },
-  { name: "Daily Post", topic: "Monarch story · Feb 2025", url: "https://dailypost.ng" },
-  { name: "Tribune Online", topic: "Minority Whip · May 2025", url: "https://tribuneonlineng.com" },
-  { name: "Blueprint", topic: "APC Move · July 2025", url: "https://blueprint.ng" },
-  { name: "Voice of Nigeria", topic: "Assembly coverage", url: "https://von.gov.ng" },
+  { name: "The Punch", topic: "Monarch ransom · Feb 2025", url: "https://punchng.com/police-lied-we-paid-ransom-for-traditional-rulers-release-edo-lawmaker/" },
+  { name: "Daily Post", topic: "Monarch story · Feb 2025", url: "https://dailypost.ng/2025/02/10/edo-dont-claim-glory-for-our-monarchs-release-we-paid-ransom-lawmaker-inegbeboh-to-police-essc/" },
+  { name: "Tribune Online", topic: "Minority Whip · May 2025", url: "https://tribuneonlineng.com/uproar-as-edo-assembly-appoints-eugene-inegbeboh-as-minority-whip/amp/" },
+  { name: "Blueprint", topic: "APC Move · July 2025", url: "https://blueprint.ng/again-pdp-legislators-join-apc-in-edo/" },
+  { name: "Vanguard Nigeria", topic: "Assembly coverage", url: "www.vanguardngr.com/2025/05/edo-assembly-appoints-minority-whip-amid-uproar/amp/" },
 ];
 
 
